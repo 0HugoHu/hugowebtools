@@ -4,7 +4,7 @@ export const { themes: appThemes, useTheme: useAppTheme } = defineThemes({
   light: {
     background: '#ffffff',
     text: {
-      baseColor: '#333639',
+      baseColor: '#333333',
       mutedColor: '#767c82',
     },
     default: {

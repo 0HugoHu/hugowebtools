@@ -4,15 +4,13 @@ export const { useTheme } = defineThemes({
   dark: {
     backgroundColor: '#333333',
     borderColor: '#333333',
-
     focus: {
-      backgroundColor: '#1ea54c1a',
+      backgroundColor: 'rgba(53,53,53,0.1)',
     },
   },
   light: {
     backgroundColor: '#ffffff',
     borderColor: '#e0e0e69e',
-
     focus: {
       backgroundColor: '#ffffff',
     },
