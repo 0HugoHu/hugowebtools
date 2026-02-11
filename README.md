@@ -4,7 +4,7 @@
     <img src="./.github/logo-dark.png" alt="IT Tools Logo">
 </picture>
 
-# IT Tools
+# HugoTools
 
 A comprehensive collection of handy online tools for developers, with great UX. [**Visit IT Tools →**](https://it-tools.tech)
 
