@@ -13,10 +13,10 @@ export const { themes: appThemes, useTheme: useAppTheme } = defineThemes({
       colorPressed: 'rgba(46, 51, 56, 0.22)',
     },
     primary: {
-      color: '#222831',
-      colorHover: '#31363F',
-      colorPressed: '#76ABAE',
-      colorFaded: '#EEEEEE',
+      color: '#4a8a8d',
+      colorHover: '#76ABAE',
+      colorPressed: '#3a7073',
+      colorFaded: '#76ABAE1a',
     },
     warning: {
       color: '#f59e0b',
@@ -49,10 +49,10 @@ export const { themes: appThemes, useTheme: useAppTheme } = defineThemes({
       colorPressed: 'rgba(255, 255, 255, 0.24)',
     },
     primary: {
-      color: '#222831',
-      colorHover: '#31363F',
-      colorPressed: '#76ABAE',
-      colorFaded: '#EEEEEE',
+      color: '#76ABAE',
+      colorHover: '#93c5c8',
+      colorPressed: '#5a9598',
+      colorFaded: '#76ABAE22',
     },
     warning: {
       color: '#f59e0b',

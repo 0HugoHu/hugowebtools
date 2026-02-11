@@ -15,63 +15,36 @@ home:
   toggleMenu: Menü umschalten
   home: Startseite
   uiLib: UI-Bibliothek
-  support: Unterstütze die Entwicklung von IT-Tools
-  buyMeACoffee: Kauf mir einen Kaffee
   follow:
-    title: Magst du IT-Tools?
+    title: Magst du HugoTools?
     p1: Gib uns einen Stern auf
-    githubRepository: IT-Tools GitHub-Repository
+    githubRepository: HugoTools GitHub-Repository
     p2: oder folge uns auf
-    twitterXAccount: IT-Tools X-Konto
+    twitterXAccount: HugoTools
     thankYou: Vielen Dank!
   nav:
     github: GitHub-Repository
-    githubRepository: IT-Tools GitHub-Repository
-    twitterX: X-Konto
-    twitterXAccount: IT-Tools X-Konto
-    about: Über IT-Tools
+    githubRepository: HugoTools GitHub-Repository
+    about: Über HugoTools
     aboutLabel: Über
     darkMode: Dunkelmodus
     lightMode: Hellmodus
     mode: Wechseln zwischen dunklem/hellem Modus
 about:
   content: >
-    # Über IT-Tools
+    # Über HugoTools
 
-    Diese wunderbare Website, erstellt mit ❤ von [Corentin
-    Thomasset](https://corentin.tech?utm_source=it-tools&utm_medium=about), sammelt nützliche Tools für
-    Entwickler und Menschen, die in der IT arbeiten. Wenn du sie nützlich
-    findest, teile sie gerne mit Personen, von denen du denkst, dass sie sie
-    ebenfalls nützlich finden könnten, und vergiss nicht, sie in deiner
-    Lesezeichenleiste zu speichern!
+    HugoTools ist eine Sammlung nützlicher Tools für Entwickler und IT-Fachleute, geforkt von [IT Tools](https://github.com/CorentinTh/it-tools), ursprünglich erstellt von [Corentin Thomasset](https://corentin.tech). Es wird jetzt von [Hugo Hu](https://github.com/0HugoHu) gepflegt.
 
-    IT-Tools ist Open Source (unter der GPL-3.0-Lizenz) und kostenlos und wird es
-    immer sein, aber es kostet mich Geld, die Website zu hosten und den
-    Domainnamen zu erneuern. Wenn du meine Arbeit unterstützen möchtest und mich
-    ermutigen möchtest, mehr Tools hinzuzufügen, überlege bitte, mich durch
-    [Sponsoring](https://www.buymeacoffee.com/cthmsst) zu unterstützen.
+    HugoTools ist Open Source (unter der GPL-3.0-Lizenz) und kostenlos.
 
     ## Technologien
 
-    IT-Tools wurde mit Vue.js (Vue 3) und der Naive UI-Komponentenbibliothek
-    erstellt und wird von Vercel gehostet und kontinuierlich bereitgestellt. In
-    einigen Tools werden Drittanbieter-Open-Source-Bibliotheken verwendet. Du
-    findest die vollständige Liste in der
-    [package.json](https://github.com/CorentinTh/it-tools/blob/main/package.json)-Datei
-    des Repositorys.
+    HugoTools wurde mit Vue.js (Vue 3) und der Naive UI-Komponentenbibliothek erstellt. In einigen Tools werden Drittanbieter-Open-Source-Bibliotheken verwendet. Du findest die vollständige Liste in der [package.json](https://github.com/0HugoHu/hugowebtools/blob/main/package.json)-Datei des Repositorys.
 
     ## Einen Fehler gefunden? Ein Tool fehlt?
 
-    Wenn du ein Tool benötigst, das hier noch nicht vorhanden ist, und du
-    denkst, dass es nützlich sein könnte, bist du herzlich eingeladen, einen
-    Feature-Request im
-    [Issues-Bereich](https://github.com/CorentinTh/it-tools/issues/new/choose)
-    im GitHub-Repository einzureichen.
-
-    Und wenn du einen Fehler gefunden hast oder etwas nicht wie erwartet
-    funktioniert, melde bitte einen Fehler im
-    [Issues-Bereich](https://github.com/CorentinTh/it-tools/issues/new/choose)
-    im GitHub-Repository.
+    Wenn du ein Tool benötigst, das hier noch nicht vorhanden ist, oder einen Fehler gefunden hast, melde dies bitte im [Issues-Bereich](https://github.com/0HugoHu/hugowebtools/issues) im GitHub-Repository.
 favoriteButton:
   remove: Aus Favoriten entfernen
   add: Zu Favoriten hinzufügen

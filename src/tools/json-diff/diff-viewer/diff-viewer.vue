@@ -35,6 +35,13 @@ const showResults = computed(() => !_.isUndefined(leftJson.value) && !_.isUndefi
 </template>
 
 <style lang="less" scoped>
+@diff-added-bg: rgba(118, 171, 174, 0.12);
+@diff-added-color: #4a8a8d;
+@diff-added-border: #76ABAE;
+@diff-removed-bg: rgba(180, 96, 108, 0.12);
+@diff-removed-color: #b8606c;
+@diff-removed-border: #cf6a7a;
+
 ::v-deep(.diffs-viewer) {
   color: v-bind('appTheme.text.mutedColor');
 
@@ -63,8 +70,8 @@ const showResults = computed(() => !_.isUndefined(leftJson.value) && !_.isUndefi
         &.added {
           padding: 3px 5px;
           border-radius: 4px;
-          background-color: v-bind('appTheme.success.colorFaded');
-          color: v-bind('appTheme.success.color');
+          background-color: @diff-added-bg;
+          color: @diff-added-color;
           .key {
             color: inherit;
           }
@@ -73,8 +80,8 @@ const showResults = computed(() => !_.isUndefined(leftJson.value) && !_.isUndefi
         &.removed {
           padding: 3px 5px;
           border-radius: 4px;
-          background-color: v-bind('appTheme.error.colorFaded');
-          color: v-bind('appTheme.error.color');
+          background-color: @diff-removed-bg;
+          color: @diff-removed-color;
 
           .key {
             color: inherit;
@@ -88,11 +95,11 @@ const showResults = computed(() => !_.isUndefined(leftJson.value) && !_.isUndefi
         transition: border-color 0.2s ease-in-out;
 
         &.added:hover {
-          border-color: v-bind('appTheme.success.color');
+          border-color: @diff-added-border;
         }
 
         &.removed:hover {
-          border-color: v-bind('appTheme.error.color');
+          border-color: @diff-removed-border;
         }
       }
 

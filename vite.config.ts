@@ -57,8 +57,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       strategies: 'generateSW',
       manifest: {
-        name: 'IT Tools',
-        description: 'Aggregated set of useful tools for developers.',
+        name: 'HugoTools',
+        description: 'Collection of handy online tools for developers.',
         display: 'standalone',
         lang: 'fr-FR',
         start_url: `${baseUrl}?utm_source=pwa&utm_medium=pwa`,

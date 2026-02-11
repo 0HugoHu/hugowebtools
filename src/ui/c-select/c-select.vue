@@ -225,7 +225,7 @@ function onSearchInput() {
     box-shadow: v-bind('theme.dropdownShadow');
     font-family: inherit;
     font-size: inherit;
-    line-height: 1;
+    line-height: 1.4;
     padding: 6px;
 
     .c-select-dropdown-option{

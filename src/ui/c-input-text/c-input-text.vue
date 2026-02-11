@@ -287,6 +287,7 @@ defineExpose({
       min-width: 0;
 
       padding: 8px 0;
+      line-height: 1.5;
       outline: none;
       background-color: transparent;
       background-image: none;

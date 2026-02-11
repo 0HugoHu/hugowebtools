@@ -14,6 +14,10 @@ monaco.editor.defineTheme('it-tools-dark', {
   rules: [],
   colors: {
     'editor.background': '#00000000',
+    'diffEditor.insertedTextBackground': '#76ABAE30',
+    'diffEditor.removedTextBackground': '#cf6a7a30',
+    'diffEditor.insertedLineBackground': '#76ABAE18',
+    'diffEditor.removedLineBackground': '#cf6a7a18',
   },
 });
 
@@ -23,6 +27,10 @@ monaco.editor.defineTheme('it-tools-light', {
   rules: [],
   colors: {
     'editor.background': '#00000000',
+    'diffEditor.insertedTextBackground': '#76ABAE30',
+    'diffEditor.removedTextBackground': '#d4808830',
+    'diffEditor.insertedLineBackground': '#76ABAE15',
+    'diffEditor.removedLineBackground': '#d4808815',
   },
 });
 

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { NIcon, useThemeVars } from 'naive-ui';
+import { NIcon } from 'naive-ui';
 
 import { RouterLink } from 'vue-router';
 import { Home2, Menu2 } from '@vicons/tabler';
@@ -14,10 +14,8 @@ import type { ToolCategory } from '@/tools/tools.types';
 import { useToolStore } from '@/tools/tools.store';
 import CollapsibleToolMenu from '@/components/CollapsibleToolMenu.vue';
 
-const themeVars = useThemeVars();
 const styleStore = useStyleStore();
 const version = config.app.version;
-const commitSha = config.app.lastCommitSha.slice(0, 7);
 
 const { t } = useI18n();
 
@@ -39,10 +37,6 @@ const tools = computed<ToolCategory[]>(() => [
           <div class="title">
             HugoTools
           </div>
-          <div class="divider" />
-          <div class="subtitle">
-            {{ $t('home.subtitle') }}
-          </div>
         </div>
       </RouterLink>
 
@@ -59,28 +53,18 @@ const tools = computed<ToolCategory[]>(() => [
 
         <div class="footer">
           <div>
-            HugoTools
-
-            <c-link target="_blank" rel="noopener" :href="`https://github.com/CorentinTh/it-tools/tree/v${version}`">
-              v{{ version }}
-            </c-link>
-
-            <template v-if="commitSha && commitSha.length > 0">
-              -
-              <c-link
-                target="_blank"
-                rel="noopener"
-                type="primary"
-                :href="`https://github.com/CorentinTh/it-tools/tree/${commitSha}`"
-              >
-                {{ commitSha }}
-              </c-link>
-            </template>
+            HugoTools v{{ version }}
           </div>
           <div>
             © {{ new Date().getFullYear() }}
-            <c-link target="_blank" rel="noopener" href="https://corentin.tech?utm_source=it-tools&utm_medium=footer">
+            <c-link target="_blank" rel="noopener" href="https://github.com/0HugoHu/hugowebtools">
               Hugo Hu
+            </c-link>
+          </div>
+          <div>
+            Forked from
+            <c-link target="_blank" rel="noopener" href="https://github.com/CorentinTh/it-tools">
+              IT Tools
             </c-link>
           </div>
         </div>
@@ -104,12 +88,6 @@ const tools = computed<ToolCategory[]>(() => [
           </c-button>
         </c-tooltip>
 
-        <c-tooltip :tooltip="$t('home.uiLib')" position="bottom">
-          <c-button v-if="config.app.env === 'development'" to="/c-lib" circle variant="text" :aria-label="$t('home.uiLib')">
-            <icon-mdi:brush-variant text-20px />
-          </c-button>
-        </c-tooltip>
-
         <command-palette />
 
         <locale-selector v-if="!styleStore.isSmallScreen" />
@@ -124,30 +102,6 @@ const tools = computed<ToolCategory[]>(() => [
 </template>
 
 <style lang="less" scoped>
-// ::v-deep(.n-layout-scroll-container) {
-//     @percent: 4%;
-//     @position: 25px;
-//     @size: 50px;
-//     @color: #eeeeee25;
-//     background-image: radial-gradient(@color @percent, transparent @percent),
-//         radial-gradient(@color @percent, transparent @percent);
-//     background-position: 0 0, @position @position;
-//     background-size: @size @size;
-// }
-
-.support-button {
-  background: rgb(37, 99, 108);
-  background: linear-gradient(48deg, rgba(37, 99, 108, 1) 0%, rgba(59, 149, 111, 1) 60%, rgba(20, 160, 88, 1) 100%);
-  color: #fff !important;
-  transition: padding ease 0.2s !important;
-
-  &:hover {
-    color: #fff;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-
 .footer {
   text-align: center;
   color: #838587;
@@ -177,7 +131,12 @@ const tools = computed<ToolCategory[]>(() => [
     left: 0;
     width: 100%;
     text-align: center;
-    top: 16px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
     color: #fff;
 
     .title {
@@ -185,17 +144,6 @@ const tools = computed<ToolCategory[]>(() => [
       font-weight: 600;
     }
 
-    .divider {
-      width: 50px;
-      height: 2px;
-      border-radius: 4px;
-      background-color: v-bind('themeVars.primaryColor');
-      margin: 0 auto 5px;
-    }
-
-    .subtitle {
-      font-size: 16px;
-    }
   }
 }
 </style>

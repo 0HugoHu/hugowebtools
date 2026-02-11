@@ -1,14 +1,14 @@
 {
-  "name": "it-tools",
+  "name": "hugowebtools",
   "type": "module",
-  "version": "2024.10.22-7ca5933",
+  "version": "1.0.0",
   "packageManager": "pnpm@9.11.0",
   "description": "Collection of handy online tools for developers, with great UX. ",
-  "author": "Corentin Th <corentin.thomasset74+it-tools@gmail.com> (https://corentin.tech)",
+  "author": "Hugo Hu (https://github.com/0HugoHu)",
   "license": "GNU GPLv3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CorentinTh/it-tools"
+    "url": "https://github.com/0HugoHu/hugowebtools"
   },
   "keywords": [
     "productivity",
@@ -52,7 +52,6 @@
     "@vueuse/core": "^10.3.0",
     "@vueuse/head": "^1.0.0",
     "@vueuse/router": "^10.0.0",
-    "aws-rum-web": "^1.24.0",
     "bcryptjs": "^2.4.3",
     "change-case": "^4.1.2",
     "colord": "^2.9.3",
@@ -87,7 +86,6 @@
     "oui-data": "^1.0.10",
     "pdf-signature-reader": "^1.4.2",
     "pinia": "^2.0.34",
-    "plausible-tracker": "^0.3.8",
     "pnpm": "^9.15.4",
     "qrcode": "^1.5.1",
     "randexp": "^0.5.3",
